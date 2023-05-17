@@ -29,7 +29,7 @@ int main() {
     sushi->slash(tom);
 
     Team team_A(tom); 
-    team_A.add(new YountNinja("Yogi", Point(64,57)));
+    team_A.add(new YoungNinja("Yogi", Point(64,57)));
 
     // Team b(tom); should throw tom is already in team a
 
@@ -42,6 +42,7 @@ int main() {
         team_B.attack(&team_A);
         team_A.print();
         team_B.print();
+        break;
      }
 
      if (team_A.stillAlive() > 0) cout << "winner is team_A" << endl;
